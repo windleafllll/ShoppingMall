@@ -1,4 +1,5 @@
 import { themeManager } from '../manage/ThemeManager'
+import { HomeTab } from './Tab/HomeTab'
 
 @Entry
 @Component
@@ -48,7 +49,7 @@ struct Index {
   build() {
     Tabs({ index: this.currentIndex, barPosition: BarPosition.End }) {
       TabContent() {
-
+        HomeTab()
       }
       .tabBar(this.TabBuilder('首页', 0, $r('app.media.ic_user_home'), $r('app.media.ic_user_home')))
 
